@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enablebanking-readcli-local"
+version = "0.1.0"
+description = "Minimal read-only Enable Banking CLI prototype"
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42,<51"]
+
+[project.scripts]
+enablebanking-read = "enablebanking_read:main"
+
+[tool.setuptools]
+py-modules = ["enablebanking_read"]
